@@ -2,8 +2,8 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                random-string
-version:             0.1.0.0
-synopsis:            Generate a random base 16,58, or 64 string
+version:             0.1.0.1
+synopsis:            Generate a random base 16, 58, or 64 string
 description:         Uses the fastest strong random available for a random
                      string of the given base and length (in bytes of entropy).
 license:             BSD3
@@ -20,7 +20,7 @@ library
   exposed-modules:     System.RandomString
   -- other-modules:       
   -- other-extensions:    
-  build-depends:       base >=4.10 && <4.11
+  build-depends:       base >=4.10 && <5
                      , bytestring >=0.10 && <0.11
                      , base16-bytestring
                      , base58-bytestring
